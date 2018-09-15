@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<!-- recordatorio:
+		poner en las imagenes del cuerpo un curso de pregunta  
+
+	-->
+
+	<meta charset="UTF-8">
+	<title>Rompecabezas del cuerpo humano</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+
+</head>
+<body>
+	<div id="div-barra">
+		<img src="images/barra.png"     id="img-barra" >
+ 		<img src="images/corazon.png"   id="img-barra-corazon"> 
+		<img src="images/pulmones.png"  id="img-barra-pulmones">
+		<img src="images/higado.png"    id="img-barra-higado">
+		<img src="images/estomago.png"  id="img-barra-estomago">
+		<img src="images/cerebro.png"   id="img-barra-cerebro">
+		<img src="images/intestino.png" id="img-barra-intestino">
+		<img src="images/rinon.png"     id="img-barra-rinon">
+	</div>
+
+	<div id="div-img-cuerpo">
+		<img src="images/cuerpoHumano.png" id="img-cuerpo">
+		<img src="images/corazon.png"      id="img-corazon"   alt="Corazón">
+		<img src="images/pulmones.png"     id="img-pulmones"  alt="Pulmones">
+		<img src="images/higado.png"       id="img-higado"    alt="higado">
+		<img src="images/estomago.png"     id="img-estomago"  alt="estomago">
+		<img src="images/cerebro.png"      id="img-cerebro"   alt="cerebro">
+		<img src="images/intestino.png"    id="img-intestino" alt="intestino">
+		<img src="images/rinon.png"        id="img-rinon"     alt="rinon"> 
+		
+	</div>
+
+
+	<div id="modal">
+		<div id="modal-div-titulo">
+			<center><span id="modal-titulo">Instrucciones</span></center>
+			<img src="images/icon-x.png" alt="cerrar" id="modal-icon-close">
+		</div>
+		<div id="modal-contenido">
+			<p><strong>Le recomendamos utilizar su dispositivo de forma horizontal para una mejor experiencia</strong></p>
+			<p>Arrastre del recuadro vertical de color azul los órganos del cuerpo a su correspondiente posición en la imagen del cuerpo humano</p>
+			<p>En caso de utilizar un dispositivo movil como celular o tablet seleccione la opción presionando sobre el organo del recuadro azul y luego en su correspondiente en el cuerpo humano</p>
+			<p>Si se ha elegido bien se despliega la información del organo correpondiente, si ha cerrado el recuadro de información podra volver a desplegarlo pulsando sobre el organo en el cuerpo humano</p>
+		</div>
+		
+		<center id="audio">
+		 <audio id="modal-audio"  style="display: none;" controls>
+  			<source src="audio/corazon.mp3" type="audio/mpeg">
+  			<source src="audio/corazon.ogg" type="audio/ogg">
+  			Tu navegador no soporta este elemento.
+  			 		MP3	audio/mpeg
+  						Ogg	audio/ogg
+  						Wav	audio/wav 
+  					
+				 
+		</audio>
+		</center>
+
+	</div>
+	
+	<img src="images/instrucciones.png" id="bntInstrucciones" alt="botón de instrucciones">
+	<img src="images/btnReinicio.png" id="btnReincio" alt="botón de reinicio">
+
+</body>
+</html>

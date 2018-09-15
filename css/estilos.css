@@ -1,0 +1,367 @@
+
+/*Elementos del html*/
+body{
+	background: #E6E6E6;
+	overflow: hidden;
+}
+
+#btnReincio{
+	width:10%;
+	height: 13%;
+	
+	position: absolute;
+	
+	right: 15%;
+	top: 3%;
+}
+
+#bntInstrucciones{
+	
+	width:10%;
+	height: 13%;
+	
+	position: absolute;
+	
+	right: 3%;
+	top: 3%;
+}
+
+#modal{
+	/*overflow: hidden;*/
+
+	position: absolute; 
+	
+	width: 80%; 
+	height: 70%; 
+
+	top: 12%; 
+	left: 8%; 
+
+	border-radius: 15px 15px 15px 15px;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 18px; 
+	font-weight: normal; 
+	border: #333333 3px solid; 
+	background: rgba(169,209,142,1);
+	color: #000000; 
+	/*display:none;*/
+	z-index: 12;
+}
+
+#modal-div-titulo{
+	margin-top: 10px;
+	font-weight: bold; 
+}
+
+#modal-titulo{
+	font-size: 27px; 
+}
+
+#modal-contenido{
+
+	overflow: scroll;
+	overflow-x:hidden;
+	
+
+	border-radius: 15px 15px 15px 15px;
+	
+	width: 84%;
+	height: 55%;
+	background: rgb(180,199,231);
+	margin-left: 5%;
+	margin-top: 2%;
+
+	padding: 3%;
+	text-align: justify;
+	font-size: 16px;
+
+
+}
+
+ #modal-contenido::-moz-scrollbar,
+ #modal-contenido::-o-scrollbar,
+ #modal-contenido::-ms-scrollbar,
+ #modal-contenido::-webkit-scrollbar {
+    width: 6px;
+	background-color: #F5F5F5;
+	border-top-left-radius: 10px;
+}
+
+
+#modal-contenido::-moz-scrollbar-track,
+#modal-contenido::-o-scrollbar-track,
+#modal-contenido::-ms-scrollbar-track, 
+#modal-contenido::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#modal-contenido::-moz-scrollbar-thumb,
+#modal-contenido::-o-scrollbar-thumb,
+#modal-contenido::-ms-scrollbar-thumb,
+#modal-contenido::-webkit-scrollbar-thumb {
+  	background-color: #000000;
+  	border-radius: 10px;
+}
+ 
+#modal-audio{
+	margin-top: 2%;
+/*	opacity: 0.7;*/
+	border: 1px black solid;
+	border-radius: 23px;
+}
+
+
+#modal-icon-close{
+	width: 6%;
+	height: 9%;
+	position: absolute;
+	right: 2%;
+	top:3%;
+}
+
+#img-barra-corazon:hover,
+#img-barra-pulmones:hover,
+#img-barra-higado:hover,
+#img-barra-estomago:hover,
+#img-barra-cerebro:hover,
+#img-barra-intestino:hover,
+#img-barra-rinon:hover,
+#modal-icon-close:hover,
+#btnReincio:hover,
+#bntInstrucciones:hover{
+	cursor:pointer;
+}
+
+
+#img-corazon:mousedown{
+	cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+/*Elementos del cuerpo*/
+#div-img-cuerpo{
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+}
+
+#img-cuerpo{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+
+	left: 20%;
+
+	opacity: 0.7;
+}
+
+#img-corazon{
+	position: absolute;
+
+	width: 4%;
+	height: 4%;
+
+	left: 43.5%;
+	top:21%;
+
+	z-index: 11;
+	
+	opacity: 0.5;
+}		
+
+#img-pulmones{
+	position: absolute;
+
+	width: 8.2%;
+	height: 17%;
+
+	left: 41%;
+	top:18%;
+
+	z-index: 10;
+	
+	opacity: 0.5;
+}
+
+#img-higado{
+	position: absolute;
+
+	width: 7%;
+	height: 7.8%;
+
+	left: 41.5%;
+	top:31%;
+
+	z-index: 10;
+	
+	opacity: 0.5;
+}
+
+#img-estomago{
+	position: absolute;
+
+	width: 5%;
+	height: 7.8%;
+
+	left: 43%;
+	top:34%;
+
+	z-index: 10;
+	
+	opacity: 0.5;
+}
+
+
+
+#img-cerebro{
+	position: absolute;
+
+	width: 4%;
+	height: 5%;
+
+	left: 43.1%;
+	top:4%;
+
+	z-index: 10;
+	
+	opacity: 0.3; 
+}
+
+#img-rinon{
+	position: absolute;
+
+	width: 3%;
+	height: 6%;
+
+	left: 41.5%;
+	top:36%;
+
+	z-index: 11;
+	
+	opacity: 0.5;
+}
+
+#img-intestino{
+	position: absolute;
+
+	width: 7%;
+	height: 8%;
+
+	left: 41.5%;
+	top:40%;
+
+	z-index: 10;
+	
+	 opacity: 0.5; 
+}
+
+
+/*Elementos del la barra de opciones*/
+#div-barra{
+	position: absolute;
+	width: 10%;
+	height: 90%;
+	margin-top: 3%;
+	/*display: inline;*/
+	z-index: 9px;
+}
+
+#img-barra{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	z-index: 9;
+}
+
+#img-barra-corazon{
+	position: absolute;
+	width: 65%;
+	height: 6%;
+	z-index: 10;
+
+	top:17%;
+	left: 14%;
+}
+
+
+#img-barra-pulmones{
+	position: absolute;
+	width: 65%;
+	height: 8%;
+	z-index: 10;
+
+	top:27%;
+	left: 17%;
+}
+
+#img-barra-higado{
+	position: absolute;
+	width: 65%;
+	height: 8%;
+	z-index: 10;
+
+	top:37%;
+	left: 17%;	
+}
+
+#img-barra-estomago{
+	position: absolute;
+	width: 65%;
+	height: 8%;
+	z-index: 10;
+
+	top:47%;
+	left: 17%;
+}
+
+#img-barra-cerebro{
+	position: absolute;
+	width: 65%;
+	height: 8%;
+	z-index: 10;
+
+	top:57%;
+	left: 17%;
+}
+
+
+#img-barra-intestino{
+	position: absolute;
+	width: 65%;
+	height: 8%;
+	z-index: 10;
+
+	top:67%;
+	left: 17%;
+}
+
+#img-barra-rinon{
+	position: absolute;
+	width: 55%;
+	height: 8%;
+	z-index: 10;
+
+	top:77%;
+	left: 22%;
+}
+
+/*Elementos de Tooltips */
+.tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	z-index: 12;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
